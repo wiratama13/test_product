@@ -112,7 +112,7 @@ class ProductController extends Controller
 
         $validateData = $request->validate($rules, $messages);
 
-        $product = Product::where('id_produk',$id_produk)->firstOrFail();
+        $product = Product::where('id_produk',$id_produk);
         $product->update($validateData);
         return redirect()->route('product');
     }
