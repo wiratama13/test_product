@@ -1,0 +1,28 @@
+#scrollUp {
+    background-color: $main-primary-color;
+    border-radius: 5px 0 0 5px;
+    bottom: 70px;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 12px 0;
+    height: 60px;
+    line-height: 1.5;
+    right: 0;
+    text-align: center;
+    width: 35px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    font-weight: 700;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase; 
+
+    i {
+      font-size: 18px;
+      display: block;
+    }
+
+    &:hover {
+      background-color: $main-secondary-color;
+      color: #ffffff; 
+    }
+}

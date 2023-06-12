@@ -1,0 +1,151 @@
+/* Header Area CSS */
+.header-area {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+
+    
+    .top-header-area {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 80px;
+        background-color: #f2f4f6; 
+
+        .top-contact-info {
+            position: relative;
+            z-index: 1; 
+
+            a {
+                display: inline-block;
+                color: #838383;
+                font-size: .8rem;
+                margin-bottom: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -ms-grid-row-align: center;
+                align-items: center;
+                font-weight: 600; 
+
+                img {
+                    margin-right: 10px; 
+                }
+                @media only screen and (max-width: 767px) {
+                    font-size: .6rem;
+
+                    span { display: none; }
+                }
+                &:first-child { margin-right: 30px; }
+            }
+        }
+    }
+
+    .credit-main-menu {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+
+        &::after {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            z-index: 1; 
+        }
+        .classy-nav-container {
+            background-color: transparent; 
+        }
+        .classy-navbar {
+            height: 85px;
+            padding: 0;
+            
+            @media only screen and (max-width: 767px) { height: 70px; }
+
+            .classynav ul li {
+                a {
+                    font-weight: 300;                        /* Ketebalan Tulisan */
+                    text-transform: capitalize;              /* tulisan font besar kecil pada menu */
+                    font-size: .6rem;                         /* Ukuran Font pada Menu */
+                    padding: 0 11px;
+                    color: #003679;
+                    
+
+                    &:hover, &:focus { color: #ffbb38; }
+
+                    @media only screen and (min-width: 992px) { color: #ffffff; }
+
+                    @media only screen and (min-width: 992px) and (max-width: 1199px) { font-size: .65rem; }
+                }
+                &:first-child {
+                    a {
+                        padding-left: .95rem; 
+                        @media only screen and (min-width: 992px) { padding-left: 0; }
+                    }
+                }
+                &.megamenu-item, &.has-down {
+                    a::after { 
+                        color: #003679;
+                        @media only screen and (min-width: 992px) { color: #ffffff }
+                    }
+                }
+                ul li a {
+                    // submenu
+                    color: #003679;
+                    font-size: .6rem; 
+                }
+            }
+
+            .contact {
+                position: relative;
+                z-index: 1;
+                padding-left: 50px;
+                height: 100%;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                
+                &::before {
+                    width: 100%;
+                    height: 200%;
+                    content: '';
+                    position: absolute;
+                    top: 42%;
+                    left: 0;
+                    z-index: -1;
+                    background-color: #ffbb38;
+                    -webkit-transform: rotate(30deg);
+                    transform: rotate(30deg);
+                }
+                &::after {
+                    width: 1000%;
+                    height: 100%;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 62px;
+                    z-index: -1;
+                    background-color: #ffbb38;
+                }
+                a {
+                    display: inline-block;
+                    font-size: .7rem;
+                    color: #003679;
+                    font-weight: 700;
+                    line-height: 85px;
+                    &:hover {
+                        color: #ffffff; 
+                    }
+                    @media only screen and (max-width: 767px) { line-height: 70px; }
+                    @media only screen and (min-width: 768px) and (max-width: 991px) { font-size: 1.15rem; }
+                    @media only screen and (min-width: 992px) and (max-width: 1199px) { font-size: 1.25rem; }
+                    @media only screen and (min-width: 1200px) { font-size: 1.4rem; }
+                }
+            }
+        }
+    }
+    .is-sticky .credit-main-menu { box-shadow: 0 7px 40px 0 rgba(0, 0, 0, 0.3); }
+}

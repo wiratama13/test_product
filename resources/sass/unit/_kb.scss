@@ -1,0 +1,55 @@
+@import "./variables";
+
+body.kb {
+    .header-area {
+        .top-header-area 
+        .top-contact-info {
+            a:hover, a:focus {
+                color: $kb-primary-color;
+            }
+        }
+        .credit-main-menu {
+            /* memberi warna pada menu pojok kanan */
+            background-color: $kb-primary-color;
+            &::after {
+                /* memberi warna pada menu pojok kiri */
+                background-color: $kb-primary-color;
+            }
+            .classy-navbar {
+                /* memberi warna tengah pada menu */
+                background-color: $kb-primary-color;
+            }
+        }
+    }
+
+    .hero-area {
+        .owl-dots .owl-dot {
+            /* warna tombol slideshow */
+            background-color: $kb-primary-color;
+        }
+        .owl-prev, .owl-next {
+            /* button slideshow */
+            background-color: $kb-primary-color;
+        }
+    }
+
+    .single-slide .slide-du-indicator {
+        /* garis loading slideshow */
+        background-color: $kb-primary-color;
+    }
+
+    .newsletter-area .nl-content form button {
+        /* Warna Button Search Enggine */
+        background-color: $kb-primary-color;
+    }
+
+    .footer-area {
+        /* Memberi Warna pada Footer */
+        background-color: $kb-primary-color;
+
+        .copywrite-area {
+            /* memberi warna garis pada footer */
+            border-top: 1px solid $kb-secondary-color;
+        }
+    }
+}

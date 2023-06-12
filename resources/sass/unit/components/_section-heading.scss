@@ -1,0 +1,45 @@
+.section-heading {
+    position: relative;
+    z-index: 1;
+    /* jarak atas bawah tulisan dan gambar */
+    margin-bottom: 20px;
+
+    .line {
+        width: 25px;
+        height: 5px;
+        border-radius: 3px;
+        /* Warna line/garis di tampilan body */
+        background-color: #003366;
+        /* jarak garis dan tulisan */
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: .75rem;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        color: #a5a5a5;
+        text-transform: lowercase;
+    }
+    h2 {
+        font-size: 2.25rem;
+        color: #212121;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    &.white {
+        .line { background-color: #ffffff; }
+        p, h2 { color: #ffffff; }
+    }
+
+    &.text-center .line { margin-left: auto; margin-right: auto; }
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        h2 { font-size: 1.75rem; } 
+    }
+    @media only screen and (max-width: 991px) {
+        h2 { font-size: 1.5rem; }
+    }
+}
+    
+    

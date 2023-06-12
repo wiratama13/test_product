@@ -1,0 +1,44 @@
+/* Credit Button */     /* Read More/Selengkapnya Button */
+.credit-btn {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    background-color: $main-secondary-color;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    min-width: 175px;
+    height: 48px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase; 
+
+    &:hover, &:focus {
+        font-size: 14px;
+        font-weight: 700;
+        background-color: $main-primary-color;
+        color: #ffffff; 
+    }
+    &.btn-2 {
+        background-color: $main-primary-color;
+        color: #ffffff; 
+    }
+    &.btn-2:hover, &.btn-2:focus {
+        background-color: $main-secondary-color;
+        color: #ffffff; 
+    }
+    &.btn-3 {
+        background-color: transparent;
+        color: $main-primary-color;
+        border: 2px solid $main-primary-color;
+        line-height: 44px; 
+    }
+    &.btn-3:hover, &.btn-3:focus {
+        border: 2px solid $main-primary-color;
+        background-color: $main-primary-color;
+        color: #ffffff; 
+    }
+}
