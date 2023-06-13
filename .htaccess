@@ -22,8 +22,6 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
     
-
-  
 </IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
