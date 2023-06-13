@@ -18,9 +18,6 @@ use App\Http\Controllers\Home\ProductController;
 |
 */
 
-
-
-// Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/', [ProductController::class, 'index'])->name('product');
 Route::get('/filter-product', [ProductController::class, 'filter'])->name('product-filter');
 Route::get('/product/create', [ProductController::class, 'create'])->name('product-create');

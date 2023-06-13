@@ -99,52 +99,7 @@
 
     <!-- Bootstrap core JavaScript-->
 
-
 </body>
 @endsection
 
-@push('prepend-style')
-    <link rel="stylesheet" href="{{ url('frontend/libraries/mc/mc-calendar.min.css') }}">
-@endpush
-
-@push('prepend-script')
-
-    <script>
-
-        function previewImage() {
-        const gambar = document.querySelector('#gambar')
-        const imgPreview = document.querySelector('.img-preview')
-
-        imgPreview.style.display ='block';
-
-        const OfReader = new FileReader();
-        OfReader.readAsDataURL(gambar.files[0]);
-
-        OfReader.onload = function(oFREvent) {
-            imgPreview.src = oFREvent.target.result;
-        }
-    }
-    </script>
-
-    <script src="{{ url('frontend/libraries/mc/mc-calendar.min.js') }}"></script>
-    <script>
-
-    let Datepicker = MCDatepicker.create({
-      el: '#datepicker',
-      dateFormat: 'YYYY-mm-dd',
-        bodyType: 'inline',
-    })
-
-    </script>
-   <script src="{{ url('ckeditor/ckeditor.js') }}"></script>
-
-    <script>
-        CKEDITOR.addCss('.cke_editable p { margin: 0 !important; }');
-        CKEDITOR.replace('deskripsi',{
-            removeButtons :'Image'
-        });
-
-    </script>
-
-@endpush
 
