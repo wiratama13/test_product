@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>Library Admin </title>
+    <title>Product CRUD </title>
      {{-- <link rel="shortcut icon" href="{{ url('img/ALMuslimBaru.png') }}" type="image/x-icon" /> --}}
     <!-- Custom fonts for this template-->
     <link href="{{ url('frontend/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">

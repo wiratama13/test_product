@@ -43,7 +43,7 @@
     </li> --}}
 
 
-    <li class="nav-item {{ Request::is('product*') ? 'active' : '' }}">
+    <li class="nav-item {{ Request::is('*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('product') }}">
             <i class="fa fa-newspaper" aria-hidden="true"></i>
             <span>Product</span></a>
