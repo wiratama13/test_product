@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\ProductController;
 
 
@@ -19,7 +17,6 @@ use App\Http\Controllers\Home\ProductController;
 */
 
 Route::get('/', [ProductController::class, 'index'])->name('product');
-Route::get('/filter-product', [ProductController::class, 'filter'])->name('product-filter');
 Route::get('/product/create', [ProductController::class, 'create'])->name('product-create');
 Route::post('/product/store', [ProductController::class, 'store'])->name('product-store');
 Route::get('/product/show/{nama_produk}', [ProductController::class, 'show'])->name('product-show');

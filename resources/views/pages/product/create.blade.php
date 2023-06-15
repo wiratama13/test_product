@@ -22,7 +22,6 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                     <!-- Page Heading -->
 
                         @if ($errors->any())
@@ -40,37 +39,36 @@
                         <div class="col">
                             <div class="card-shadow">
                                 <div class="card-body">
-                                    <form action="{{ route('product-store') }}" method="POST" enctype="multipart/form-data">
-                                        @csrf
+                                <form action="{{ route('product-store') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
 
-                                        <div class="form-group">
-                                            <label for="nama_produk">Nama produk</label>
-                                            <input type="text" name="nama_produk" id="nama_produk" class="form-control" placeholder="masukkan nama_produk" value="{{ old('nama_produk') }}">
-                                        </div>
+                                <div class="form-group">
+                                    <label for="nama_produk">Nama produk</label>
+                                    <input type="text" name="nama_produk" id="nama_produk" class="form-control" placeholder="masukkan nama_produk" value="{{ old('nama_produk') }}">
+                                </div>
 
-                                        <div class="form-group">
-                                            <label for="harga">Harga</label>
-                                            <input type="number" name="harga" id="harga" class="form-control" placeholder="masukkan harga" value="{{ old('harga') }}">
-                                        </div>
+                                <div class="form-group">
+                                    <label for="harga">Harga</label>
+                                    <input type="number" name="harga" id="harga" class="form-control" placeholder="masukkan harga" value="{{ old('harga') }}">
+                                </div>
 
-                                        <div class="form-group">
-                                            <label for="kategori">Kategori</label>
-                                            <input type="text" name="kategori" id="kategori" class="form-control" placeholder="masukkan kategori" value="{{ old('kategori') }}">
-                                        </div>
+                                <div class="form-group">
+                                    <label for="kategori">Kategori</label>
+                                    <input type="text" name="kategori" id="kategori" class="form-control" placeholder="masukkan kategori" value="{{ old('kategori') }}">
+                                </div>
 
-                                        <div class="form-group">
-                                            <label for="status">Status</label>
-                                            <select name="status" class="form-control" id="">
-                                                <option value="bisa dijual">bisa dijual</option>
-                                                <option value="tidak bisa dijual">tidak bisa dijual</option>
-                                            </select>
-                                        </div>
+                                <div class="form-group">
+                                    <label for="status">Status</label>
+                                    <select name="status" class="form-control" id="">
+                                        <option value="bisa dijual">bisa dijual</option>
+                                        <option value="tidak bisa dijual">tidak bisa dijual</option>
+                                    </select>
+                                </div>
 
-                                        <button type="submit" class="btn btn-block btn-primary">
-                                            Simpan
-                                        </button>
-
-                                    </form>
+                                <button type="submit" class="btn btn-block btn-primary">
+                                    Buat Produk
+                                </button>
+                                </form>
                                 </div>
                             </div>
                         </div>

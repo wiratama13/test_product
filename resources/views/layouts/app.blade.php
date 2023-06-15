@@ -12,13 +12,12 @@
     @include('includes.home.style')
     @stack('prepend-style')
 </head>
-
-
 <body>
 
-@yield('content')
-@include('includes.home.script')
-@stack('prepend-script')
+    @yield('content')
+    @include('includes.home.script')
+    @stack('prepend-script')
+    
 </body>
 
 </html>

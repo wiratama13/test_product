@@ -53,7 +53,7 @@
                         <tr>
                             <td>{{ $loop->iteration  }}</td>
                             <td>{{ $product->nama_produk }}</td>
-                            <td>{{ $product->harga }}</td>
+                            <td>{{ number_format($product->harga) }}</td>
                             <td>{{ $product->kategori }}</td>
                             <td>{{ $product->status }}</td>
 
