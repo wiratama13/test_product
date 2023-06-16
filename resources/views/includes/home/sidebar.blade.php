@@ -4,8 +4,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
         <div class="sidebar-brand-icon">
-            <i class="fas fa-building"></i>
-            <i class="fa-sharp fa-solid fa-building-user"></i>
+          
         </div>
         <div class="sidebar-brand-text mx-1">InProduk</div>
 

@@ -58,9 +58,7 @@
                             <td>{{ $product->status }}</td>
 
                             <td>
-                                {{-- <a href="{{ route('product-show', $product->nama) }}" class="btn btn-primary">
-                                     <i class="fa fa-eye"></i>
-                                </a> --}}
+                                
                                 <a href="{{ route('product-edit', $product->id_produk) }}" class="btn btn-primary btn-warning">
                                      <i class="fa fa-edit"></i>
                                 </a>
@@ -69,7 +67,7 @@
 
                                 @csrf
                                 @method('delete')
-                                <button class="btn btn-danger border-0" onclick="return confirm('Apakah anda yakin ingin menghapus data ?')">
+                                <button class="btn btn-danger border-0" onclick="return confirm(`Apakah anda yakin ingin menghapus data ini`)">
                                 <i class="fa fa-trash"></i>
                                 </button>
 

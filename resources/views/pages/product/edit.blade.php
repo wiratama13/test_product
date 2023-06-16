@@ -50,7 +50,7 @@
 
                                     <div class="form-group">
                                         <label for="harga">Harga</label>
-                                        <input type="number" name="harga" id="harga" class="form-control" placeholder="masukkan harga" value="{{ old('harga', $product->harga) }}">
+                                        <input type="text" name="harga" id="harga" class="form-control" placeholder="masukkan harga" value="{{ old('harga', $product->harga) }}">
                                     </div>
 
                                     <div class="form-group">

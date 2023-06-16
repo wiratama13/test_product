@@ -41,7 +41,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $messages = [
-            'required' => ':attribute wajib diisi',
+            'required' => ':attribute harus diisi',
             'harga.numeric' => ':attribute harus diisi angka',
         ];
  
@@ -99,7 +99,7 @@ class ProductController extends Controller
     public function update(Request $request, $id_produk)
     {
         $messages = [
-            'required' => ':attribute wajib diisi',
+            'required' => ':attribute harus diisi',
             'harga.numeric' => ':attribute harus diisi angka',
         ];
 
